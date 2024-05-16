@@ -15,7 +15,7 @@ const nftPreview = () => {
             <ViewIcon />
           </div>
         </div>
-        <div className="text-white text-2xl mt-5 mb-2 font-semibold hover:text-cyan">
+        <div className="text-white text-2xl mt-5 mb-2 font-semibold hover:text-cyan hover:opacity-100 hover:cursor-pointer duration-500">
           <h2>Equilibrium #3429</h2>
         </div>
         <div className="flex mt-2 mb-2">
@@ -38,7 +38,9 @@ const nftPreview = () => {
           <img src="image-avatar.png" alt="" className="block h-12" />
           <div className="flex ml-4">
             <p className="text-soft-blue">Creation of </p>
-            <p className="text-white ml-1 hover:text-cyan">Jules Wyvern</p>
+            <p className="text-white ml-1 hover:text-cyan hover:opacity-100 hover:cursor-pointer duration-500">
+              Jules Wyvern
+            </p>
           </div>
         </div>
       </div>
