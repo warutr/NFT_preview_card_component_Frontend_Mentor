@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const OutfitFont = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "nft-preview-card-component",
@@ -16,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={OutfitFont.className}>
+        <main className="h-screen bg-very-dark-blue items-center justify-center flex">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }

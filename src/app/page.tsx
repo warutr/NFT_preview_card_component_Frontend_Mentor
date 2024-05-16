@@ -1,56 +1,49 @@
 import React from "react";
+import { ClockIcon, EthereumIcon, ViewIcon } from "./svg";
 
-const Homepage = () => {
-  return <div>Homepage</div>;
+const nftPreview = () => {
+  return (
+    <div className="max-w-[375px] mx-auto px-5">
+      <div className="bg-very-dark-blue-card flex flex-col rounded-2xl p-7 drop-shadow-xl">
+        <div className="drop-shadow-xl w-full h-auto overflow-hidden relative">
+          <img
+            src="image-equilibrium.jpg"
+            alt=""
+            className="object-contain rounded-2xl "
+          />
+          <div className="bg-cyan absolute w-full h-full top-0 flex justify-center items-center rounded-xl bg-opacity-50 opacity-0 hover:opacity-100 hover:cursor-pointer duration-700">
+            <ViewIcon />
+          </div>
+        </div>
+        <div className="text-white text-2xl mt-5 mb-2 font-semibold hover:text-cyan">
+          <h2>Equilibrium #3429</h2>
+        </div>
+        <div className="flex mt-2 mb-2">
+          <p className="text-soft-blue text-base">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+        </div>
+        <div className="flex flex-row justify-between mt-2 mb-2">
+          <div className="flex flex-row items-center">
+            <EthereumIcon />
+            <p className="text-cyan ml-2">0.041 ETH</p>
+          </div>
+          <div className="flex flex-row items-center">
+            <ClockIcon />
+            <p className="text-soft-blue ml-2">3 days left</p>
+          </div>
+        </div>
+        <hr className="border-very-dark-blue-line mt-2 mb-2" />
+        <div className="flex flex-row items-center mt-2 mb-2 ">
+          <img src="image-avatar.png" alt="" className="block h-12" />
+          <div className="flex ml-4">
+            <p className="text-soft-blue">Creation of </p>
+            <p className="text-white ml-1 hover:text-cyan">Jules Wyvern</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
-export default Homepage;
-
-/* 
-
-Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  # Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
-
-## Colors
-
-### Primary
-
-- Soft blue: hsl(215, 51%, 70%)
-- Cyan: hsl(178, 100%, 50%)
-
-### Neutral
-
-- Very dark blue (main BG): hsl(217, 54%, 11%)
-- Very dark blue (card BG): hsl(216, 50%, 16%)
-- Very dark blue (line): hsl(215, 32%, 27%)
-- White: hsl(0, 0%, 100%)
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 18px
-
-### Font
-
-- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-- Weights: 300, 400, 600
-
-*/
+export default nftPreview;
